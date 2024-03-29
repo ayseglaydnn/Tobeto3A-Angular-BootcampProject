@@ -1,0 +1,14 @@
+<section class="home">
+    <h2>Bootcamplerim</h2>
+    <div class="bootcamps">
+      <mat-card *ngFor="let bootcamp of bootcampList" class="bootcamp-card" (click)="onBootcampClick(bootcamp)">
+        <mat-card-header>
+          <mat-card-title>{{ bootcamp.name }}</mat-card-title>
+          <mat-card-subtitle>{{ bootcamp.startDate | date }} - {{ bootcamp.endDate | date }}</mat-card-subtitle>
+        </mat-card-header>
+        <mat-card-content>
+          <p>{{ bootcamp.instructorId }}</p>
+        </mat-card-content>
+      </mat-card>
+    </div>
+  </section>
