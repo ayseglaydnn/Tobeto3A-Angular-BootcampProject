@@ -5,8 +5,7 @@ import { Router, RouterModule } from '@angular/router';
 import { BootcampListResponse } from '../../models/responses/bootcamps/get-list-bootcamp-response';
 import { CommonModule, DatePipe } from '@angular/common';
 import { GetListBootcampsRequest } from '../../models/requests/bootcamps/get-list-bootcamp-request';
-import { PageRequest } from '../../models/requests/page-request';
-import { PaginatedList } from '../../models/requests/paginated-list';
+import { PaginatedList } from '../../core/models/paginated-list';
 import { Bootcamp } from '../../models/requests/bootcamps/bootcamp';
 
 @Component({
